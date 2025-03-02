@@ -26,7 +26,7 @@ export class NavbarComponent {
     this.translate.use(language);
   }
 
-  toggleMenu() {
+  toggleMenu(): void {
     this.mobileMenuVisible = !this.mobileMenuVisible;
   }
 }
