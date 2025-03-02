@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 import { FooterComponent } from '../footer/footer.component';
 import { NavbarComponent } from '../navbar/navbar.component';
-import { PageLayoutComponent } from '../page-layout/page-layout.component';
 
 @Component({
   selector: 'app-container-layout',
   standalone: true,
-  imports: [NavbarComponent, FooterComponent, PageLayoutComponent],
+  imports: [NavbarComponent, FooterComponent, RouterModule],
   templateUrl: './container-layout.component.html',
   styleUrl: './container-layout.component.scss',
 })

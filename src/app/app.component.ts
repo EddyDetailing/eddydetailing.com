@@ -10,8 +10,7 @@ import { TranslateModule, TranslateService } from '@ngx-translate/core';
   styleUrl: './app.component.scss',
 })
 export class AppComponent {
-  title = 'eddydetailing.com';
-
+  title = 'Eddy Detailing';
   constructor(private translate: TranslateService) {
     this.translate.addLangs(['en', 'fr']);
     this.translate.setDefaultLang('fr');

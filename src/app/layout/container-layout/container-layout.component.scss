@@ -1,0 +1,10 @@
+app-container-layout {
+  display: flex;
+  min-height: 100vh;
+  align-items: center;
+  background:
+    linear-gradient(rgba(52, 58, 64, 0.4), rgba(52, 58, 64, 0.7)),
+    center center no-repeat,
+    #0077c0;
+  background-size: cover;
+}

@@ -107,7 +107,7 @@ module.exports = tseslint.config(
       'no-restricted-syntax': ['error', 'WithStatement'], // Disallow `with` statements
       'no-duplicate-imports': 'error', // Disallow duplicate imports
       'no-underscore-dangle': 'warn', // Warn about identifiers with leading/trailing underscores
-      'no-useless-constructor': 'error', // Disallow useless constructor methods
+      'no-useless-constructor': 'off', // Turning off due to using constructors for dependency injections and might need an empty constructor
       'prefer-template': 'error', // Require template literals instead of string concatenation
       'object-shorthand': ['error', 'always'], // Enforce shorthand notation for object propertie
     },
