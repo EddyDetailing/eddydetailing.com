@@ -1,7 +1,7 @@
 <header id="navbar" class="px-0">
   <nav class="navbar navbar-expand-md py-0 bg-body-secondary">
     <div class="container">
-      <a class="navbar-brand header py-2 pr-2" [routerLink]="'/'">Navbar</a>
+      <a class="navbar-brand header py-2 pr-2" [routerLink]="'/'">Eddy Detailing</a>
       <div class="d-md-none">
         <a href="javascript:void(0);" (click)="toggleMenu()">
           <fa-icon *ngIf="!this.mobileMenuVisible" [icon]="icons.hamburgerMenu"></fa-icon>
@@ -16,7 +16,7 @@
       >
         <ul class="navbar-nav d-md-flex">
           <li class="mx-2 mx-xl-3 nav-link">
-            <a class="nav-link" [routerLink]="'/service'">{{
+            <a class="nav-link" [routerLink]="'/services'">{{
               'navbar.title.service' | translate
             }}</a>
           </li>
