@@ -1,0 +1,10 @@
+{
+  "change-language.title": "Changer de langue",
+  "change-language.fr": "Français",
+  "change-language.en": "English",
+  "navbar.title.service": "Services",
+  "navbar.title.contact": "Contact",
+  "navbar.title.about": "À propos",
+  "navbar.title.change-language": "Langue",
+  "footer.copyright.text": "© Copyright {{year}}, Eddy Detailing"
+}

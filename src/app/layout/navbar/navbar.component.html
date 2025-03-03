@@ -1,0 +1,59 @@
+<header id="navbar" class="px-0">
+  <nav class="navbar navbar-expand-md py-0 bg-body-secondary">
+    <div class="container">
+      <a class="navbar-brand header py-2 pr-2" [routerLink]="'/'">Navbar</a>
+      <div class="d-md-none">
+        <a href="javascript:void(0);" (click)="toggleMenu()">
+          <fa-icon *ngIf="!this.mobileMenuVisible" [icon]="icons.hamburgerMenu"></fa-icon>
+          <fa-icon *ngIf="this.mobileMenuVisible" [icon]="icons.xMark"></fa-icon>
+        </a>
+      </div>
+      <div
+        id="siteMenu"
+        class="navbar-collapse collapse justify-content-end align-items-center"
+        [class.show]="this.mobileMenuVisible"
+        id="navbarNavDropdown"
+      >
+        <ul class="navbar-nav d-md-flex">
+          <li class="mx-2 mx-xl-3 nav-link">
+            <a class="nav-link" [routerLink]="'/service'">{{
+              'navbar.title.service' | translate
+            }}</a>
+          </li>
+          <li class="mx-2 mx-xl-3 nav-link">
+            <a class="nav-link" [routerLink]="'/contact'">{{
+              'navbar.title.contact' | translate
+            }}</a>
+          </li>
+          <li class="mx-2 mx-xl-3 nav-link">
+            <a class="nav-link" [routerLink]="'/about'">{{ 'navbar.title.about' | translate }}</a>
+          </li>
+          <li class="mx-2 mx-xl-3 nav-link dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <fa-icon [icon]="icons.globe"></fa-icon>
+              {{ 'navbar.title.change-language' | translate }}
+            </a>
+            <ul class="dropdown-menu">
+              <li>
+                <a class="dropdown-item" (click)="changeLanguage('en')" href="javascript:void(0);">
+                  {{ 'change-language.en' | translate }}
+                </a>
+              </li>
+              <li>
+                <a class="dropdown-item" (click)="changeLanguage('fr')" href="javascript:void(0);">
+                  {{ 'change-language.fr' | translate }}
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>

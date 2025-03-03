@@ -1,0 +1,11 @@
+app-footer {
+  position: relative;
+  grid-area: footer;
+
+  footer {
+    text-align: center;
+    color: #cacaca;
+    background: #343a40;
+    font-size: 1.2rem;
+  }
+}
